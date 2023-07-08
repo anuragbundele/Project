@@ -1,0 +1,186 @@
+ ##Introduction :-   
+
+The Hotel Reservation System is a tool for booking the rooms of Hotel through online by the Customer. It provides the proper management tools and easy access to the customer information.
+
+##Purpose :-
+
+This Hotel Reservation System Software Requirement Specification (SRS) main objective is to provide a base for the foundation of the project. It gives a comprehensive view of how the system is supposed to work and what is to be expected by the end users. Client’s expectation and requirements are analyzed to produce specific unambiguous functional and non-functional requirements, so they can be used by development team with clear understanding to build a system as per end user needs.
+This SRS for HRS can also be used for future as basis for detailed understanding on how project was started. It provides a blueprint to upcoming new developers and maintenance teams to assist in maintaining and modifying this project as per required changeability.
+
+##Scope :-
+	
+	This System  allow users to book and maintain their room booking in a hotel. Users can also check the room availability and add them to their favourites for future booking purpose. Customers/Users will be able to give review based their past room bookings and experience also can able to add notes and they can cancel room booking also within 24 hours of booking. Users can also get discounts,if they were old customers or on festival purpose.   
+
+##Definitions, Acronyms and Abbreviations :-
+
+SRS	Software Requirement Specifications
+HRS	Hotel Reservation System
+DBMS 	Database Management System
+Blueprint	A design technical plan
+JDBC	Java Database Connectivity
+HTTP/HTTPS	Hyper Text Transfer Protocol/Secure
+API	Application Interface
+References :-
+
+1.1.	ER Diagram Tutorial: https://www.tutorialspoint.com/dbms/er_diagram_representation.htm
+1.2.	Data Flow Diagram: http://myyee.tripod.com/cs457/dfd.htm
+
+
+##Overview :-
+
+The remaining part of SRS consists of
+1) Complete description of the various product functions. 
+2) Logical characteristics of product functions.
+3) Hardware and software configuration for servers and clients operating at various levels.
+
+
+##Business Model:-
+It defines the function of the whole organization or its departments/sections. The detailed description of the functions yields to an important question i.e. “What does the organization do?” .
+A function is defined as a logical sequence of actions performed to achieve specific objectives of the organization/co. A function may have one or many sub functions and the list of names of all the functions is given.
+
+
+##Table of Contents (Business Model)
+
+1.	List of Functions
+
+2.	Functional Description
+
+3.	List of Functions
+
+
+Sr. No.	Function Id	Name of Function
+     1	      F-1	Booking and Cancelling of Rooms
+     2	      F-2	Reviewing of rooms
+     3	      F-3	Add to Favourites 
+     4	      F-4	Search By Area
+		
+	
+
+
+
+
+
+
+4.	Functional Description
+
+F-1 . Function – Booking and Cancelling of Rooms
+
+	Function Id : F-1
+
+##	Purpose -
+Customer can book any hotel rooms and cancel their bookings within 24hours of booking. New user will able to check all hotels availability and other thing but during booking hotel he must have to login first for further functionalities.
+Old users can directly login and can perform further actions whatever they want to perform.
+			
+			Time - 		Daily(24/7)
+			
+			Documents -    During registration user has to provide ID card proof
+                                                             For the security purpose and avoid fraudulent.
+			
+			Organizing
+			    Unit       -     Reception Desk of Hotel
+				
+			Data Entities - Store the details of Customer/User and their reviews. 
+
+		
+		F-2 Function – Reviewing of Rooms
+			
+			Function Id –  F-2
+			
+		##	Purpose -	
+Customers can review about their booking of rooms in  hotel  and can share their past experiences of the hotel.
+They can also give ratings and share their experiences.
+		
+			Time - 		AnyTime(24/7)
+
+			Documents- 	Login is required to record the review.
+
+			Organizing 
+			    Unit	       -   	Admin
+			
+			Data Entites-	Store the name and response.
+
+		F-3 Function – Add to Favourites
+		
+			Function Id –  F-3
+
+			Purpose –
+Customers can add the particular rooms to their list favourites list .So is they want to visit the same place they can stay in the same hotel is they liked and wanted to. Add to favourites list can show all the hotels rooms they added as favourites.
+
+			Time- 		AnyTime (24/7)
+
+			Documents- 	Not Required.
+
+			Organizing 
+			    Unit      -     	Admin
+
+			Data Entities – Name and Id of the user will get store at the backend .
+
+		                        F-4 Function – Search By Area
+		
+			Function Id – F-4
+
+			Purpose –
+ 
+			Time- 		AnyTime (24/7)
+
+			Documents-	Not Required.
+
+			Organizing 
+			      Unit     -   	Admin
+
+			Data Entities – Search By Nearby Location   
+
+
+5.	Specific Requirements
+
+a.	External Interfaces
+
+1.	User Interfaces
+
+##GUI and Help Issues:-
+					These screens are user friendly and these screens are the medium between the user and the admin. Users can see all the facilities like reviews and ratings of the room . They can search hotels and they can add it favourites for their future booking .User have to login first and before any hotel rooms confirmation or if they are the new user then they can register and continue to their confirmation of rooms. Users can can register complains of the app or wrong booking due to server issues at the Contact us or Help button to register their complain on which the admin can see and respond at particular time interval .
+
+2.	Security Issues
+User at different levels in the hierarchy will have 
+restricted access to information. Only authorized users will be able to access the confidential information. Only the System Administrator will do system administration and maintenance work. And update the information. Various security mechanisms will be provided such as password. And all the reviews are shown to all the users accept the ones in which the language is not properly used or the word are not used for particular hotel they can filtered by the admin.
+-	Password protection at different levels of the application
+-	Email and password are stored for login purpose 
+-	Documents such as Id, Aadhar are stored securely at admin level which are required at registration level
+
+3.	Software Interfaces
+
+•	Web Server(Front End)
+o	ReactJS
+o	Virus Protection Software
+o	Client Work Station 
+o	Web Browser
+o	TCP/IP
+•	Development End(Back End)
+o	.Net
+o	Java
+o	HTML
+o	Javascript
+•	Database Server
+o	MySQL
+o	MongoDB
+
+
+•	Hardware Interfaces
+
+•	Back-end Server Configuration
+o	Intel or AMD 2GHZ
+o	RAM – 4GB
+o	Disk Space- 10 GB
+o	32 bit Ethernet Controller(100 BaseT)
+
+
+•	Front-end Client Configuration
+o	Intel or AMD 1 GHZ
+o	RAM- 512MB
+o	Disk Space- 10GB
+o	32 bit PCI Ethernet Card
+o	Monitor Resolution-1024x768
+
+4.	Communication Interfaces
+
+                                                           Various network protocols such as ISDN, ATM will be used for Intranet connectivity. UTP Ethernet, TCP/IP Protocols will be used for Local Area Networks. Network hubs, routers, bridges, cables, patch cables, connectors will be required. 
